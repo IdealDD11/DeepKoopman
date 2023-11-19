@@ -1,5 +1,8 @@
-![](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/2.png)
+
 # DeepKoopman
+
+<img src="https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/2.png" width="700px">
+
 
 Package requirements: 
 * Torch 1.7.0
