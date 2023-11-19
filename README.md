@@ -1,7 +1,7 @@
 
 # DeepKoopman
 
-<img src="https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/2.png" width="700px">
+<img src="https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/2.png" width="600px">
 
 
 Package requirements: 
