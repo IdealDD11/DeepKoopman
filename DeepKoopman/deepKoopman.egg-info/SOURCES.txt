@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+deepKoopman/DeepKoopman.py
+deepKoopman/__init__.py
+deepKoopman.egg-info/PKG-INFO
+deepKoopman.egg-info/SOURCES.txt
+deepKoopman.egg-info/dependency_links.txt
+deepKoopman.egg-info/top_level.txt
