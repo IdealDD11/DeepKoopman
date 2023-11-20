@@ -40,4 +40,3 @@ Document
 
 [Process steps](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/3.png)
 
-<img src="https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/3.png" width="600px">
