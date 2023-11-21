@@ -39,52 +39,33 @@ Parameters for embeded systems
 ```
 """
 parameters:
-                model_name: systems:vdp;duffing;toy;pendulum;
-                max_iter: max iterations
-                epoch: training epoch in one iteration
-                hidden_dim: dimension of the lifted state
-                stable_dim: size of hidden layers
-                batch_size: batch size
-                nx: dimension of the original state
-                nu: dimension of the control input
-                time: sampling period
-                steps: sampling interval
-                ntaj: number of trajectories
-                mode: training or load model                            
+            model_name: systems:vdp;duffing;toy;pendulum;
+            max_iter: max iterations
+            epoch: training epoch in one iteration
+            hidden_dim: dimension of the lifted state
+            stable_dim: size of hidden layers
+            batch_size: batch size
+            nx: dimension of the original state
+            nu: dimension of the control input
+            time: sampling period
+            steps: sampling interval
+            ntaj: number of trajectories
+            mode: training or load model                            
 """ 
 ```
 
 Parameters for unknown systems
 ```
 """
-                model name:
-                    unknown system  
-                provide data paths:
-                    path1 state_trainning_data
-                    path2 controlinput_training_data
-                    path3 state_test_data
-                    path4 controlinput_test_data
-"""  
-                parser = argparse.ArgumentParser()
-                parser.add_argument("--model_name", default='unknown_system')   
-                parser.add_argument("--max_iter", default=50)
-                parser.add_argument("--epoch", default=50)
-                parser.add_argument("--hidden_dim", default=8, type=int)
-                parser.add_argument("--stable_dim", default=64, type=int)
-                parser.add_argument("--batch_size", default=128, type=int)
-                parser.add_argument("--nx", default=2, type=int)
-                parser.add_argument("--nu", default=1, type=int)
-                parser.add_argument("--time", default=50, type=int)
-                parser.add_argument("--steps", default=0.01)
-                parser.add_argument("--ntaj", default=200)
-                parser.add_argument("--mode", default="train")
-                # parser.add_argument("--mode", '-false')
-                args = parser.parse_args()
-                path1='path_for_state_data'
-                path2='path_for_controlinput_data'
-                path3='path_for_state_data'
-                path4='path_for_controlinput_data'
-                model = DeepKoopman(args.nx,args.nu,args.model_name, args.hidden_dim)                        
+parameters:
+            model name:
+                unknown system  
+            provide data paths:
+                path1 state_trainning_data
+                path2 controlinput_training_data
+                path3 state_test_data
+                path4 controlinput_test_data
+"""                        
 ```
 
 Example
