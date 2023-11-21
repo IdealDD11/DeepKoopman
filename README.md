@@ -35,6 +35,83 @@ Control
 model.policy_rollout(Q,R,...)
 ```
 
+Parameters for embeded systems
+```
+"""
+parameters:
+                model_name: systems:vdp;duffing;toy;pendulum;
+                max_iter: max iterations
+                epoch: training epoch in one iteration
+                hidden_dim: dimension of the lifted state
+                stable_dim: size of hidden layers
+                batch_size: batch size
+                nx: dimension of the original state
+                nu: dimension of the control input
+                time: sampling period
+                steps: sampling interval
+                ntaj: number of trajectories
+                mode: training or load model                            
+""" 
+```
+
+Parameters for unknown systems
+```
+"""
+                model name:
+                    unknown system  
+                provide data paths:
+                    path1 state_trainning_data
+                    path2 controlinput_training_data
+                    path3 state_test_data
+                    path4 controlinput_test_data
+"""  
+                parser = argparse.ArgumentParser()
+                parser.add_argument("--model_name", default='unknown_system')   
+                parser.add_argument("--max_iter", default=50)
+                parser.add_argument("--epoch", default=50)
+                parser.add_argument("--hidden_dim", default=8, type=int)
+                parser.add_argument("--stable_dim", default=64, type=int)
+                parser.add_argument("--batch_size", default=128, type=int)
+                parser.add_argument("--nx", default=2, type=int)
+                parser.add_argument("--nu", default=1, type=int)
+                parser.add_argument("--time", default=50, type=int)
+                parser.add_argument("--steps", default=0.01)
+                parser.add_argument("--ntaj", default=200)
+                parser.add_argument("--mode", default="train")
+                # parser.add_argument("--mode", '-false')
+                args = parser.parse_args()
+                path1='path_for_state_data'
+                path2='path_for_controlinput_data'
+                path3='path_for_state_data'
+                path4='path_for_controlinput_data'
+                model = DeepKoopman(args.nx,args.nu,args.model_name, args.hidden_dim)                        
+```
+
+Example
+```
+if args.mode== "train":
+    model.train(args.max_iter, args.epoch,0.001)
+    model.save()
+else:
+    model.load()
+    sat_true,sat_pre, error1, error2=model.pre()
+    model.pre_plot(sat_true,sat_pre, error1, error2)
+    #################LQR
+    """
+    LQR control: 
+        K gain matrix; xx closed-system states
+    """
+    # A, B = model.get_system()
+    Q = np.eye(args.hidden_dim)
+    R = np.array([[0.1]])
+    # K, _, _ = control.lqr(A, B, Q, R)    
+    ref=[0.0, 0.0]
+    x_0=[0.5,-0.5]
+    nsim=200
+    K,xx,uu=model.policy_rollout(Q, R, ref, x_0, nsim)
+    model.policy_plot(xx,uu)
+```
+
 Document  
 
 [Instruction document](https://github.com/IdealDD11/DeepKoopman/blob/f2f1dea6f99933591d36ecc50af93a3e5a931ce4/Instruction%20source%20document.pdf)
