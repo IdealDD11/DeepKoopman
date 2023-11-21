@@ -36,7 +36,7 @@ model.policy_rollout(Q,R,...)
 ```
 
 Document  
-[Instruction document]((https://github.com/IdealDD11/DeepKoopman/blob/f2f1dea6f99933591d36ecc50af93a3e5a931ce4/Instruction%20source%20document.pdf))
+[Instruction document](https://github.com/IdealDD11/DeepKoopman/blob/f2f1dea6f99933591d36ecc50af93a3e5a931ce4/Instruction%20source%20document.pdf)
 
 [Process steps](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/3.png)
 
