@@ -95,11 +95,15 @@ else:
 
 Documentation  
 
-[Instruction document](https://github.com/IdealDD11/DeepKoopman/blob/f2f1dea6f99933591d36ecc50af93a3e5a931ce4/Instruction%20source%20document.pdf)
+* [Instruction document](https://github.com/IdealDD11/DeepKoopman/blob/f2f1dea6f99933591d36ecc50af93a3e5a931ce4/Instruction%20source%20document.pdf)
 
-[Process steps [Fig1]](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/4.png)
+  [Process steps](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/3.png)
 
-[Process steps [Fig2]](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/3.png)
+* [Instruction document (EN)](https://github.com/IdealDD11/DeepKoopman/blob/0abcb60cba3b40cf6db51a2c3360ddc43e8f2f7d/DeepKoopman/Instruction%20source%20document_EN.pdf)
+
+  [Process steps](https://github.com/IdealDD11/DeepKoopman/blob/main/DeepKoopman/PNG/4.png)
+
+
 
 Theoretical  
 
