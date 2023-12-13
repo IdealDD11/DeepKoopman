@@ -119,3 +119,7 @@ Theoretical
 * [P. J. Schmid and J. Sesterhenn, “Dynamic mode decomposition of numerical and experimental data,” Journal of Fluid Mechanics, vol. 656, no. 10, pp. 5–28, 2010. ](https://doi.org/10.1017/S0022112010001217)
 * [M. Korda and I. Mezic, “Linear predictors for nonlinear dynamical systems: Koopman operator meets model predictive control,” Automatica, vol. 93, pp. 149–160, 2016. ](https://doi.org/10.1016/j.automatica.2018.03.046)
 * [J. L. Proctor, S. L. Brunton, and J. N. Kutz, “Generalizing Koopman theory to allow for inputs and control,” SIAM Journal on Applied Dynamical Systems, vol. 17, p. 909–930, 2016.](https://doi.org/10.1137/16M1062296)
+
+
+Email
+- 📫 How to reach me wangmx@stu.jiangnan.edu.cn
